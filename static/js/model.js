@@ -356,12 +356,12 @@ var link = g.append("g")
     };
 
     // Create Event Handlers for mouse
-    function handleClick(source) {
+    function handleClick(this) {
       //get the image and display either as popup or in a new div
       //alert(nodes[11].src);
-      console.log(source);
+      console.log(this);
       d3.selectAll("#imageDiv").append("div:img")
-        .attr("data:src", source)
+        .attr("data:src", this)
         .attr("height", 150)
         .attr("width", 150);
 
