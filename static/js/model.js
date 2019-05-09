@@ -359,6 +359,7 @@ var link = g.append("g")
     function handleClick(source) {
       //get the image and display either as popup or in a new div
       //alert(nodes[11].src);
+      console.log(source);
       d3.selectAll("#imageDiv").append("div:img")
         .attr("data:src", source)
         .attr("height", 150)
